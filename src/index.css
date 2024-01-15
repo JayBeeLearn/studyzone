@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: skyblue;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+
+.btn {
+  @apply py-2 px-4 bg-green-300 rounded-sm;
+}
+
+.answer {
+  @apply list-none bg-white text-blue-400 px-8 py-2 rounded w-3/4 text-xl mx-auto my-2 text-left hover:bg-gray-50  hover:border-green-600 hover:border;
+}
+
+.answer-btn {
+  @apply w-full text-left;
+}
+
+.study-answer {
+  @apply list-none w-full  flex justify-center;
+}
+
+.study-answer-btn {
+  @apply w-3/4 list-none  bg-gray-100 text-green-700 px-8 py-2 rounded  text-xl mx-auto my-2 text-left;
+}
+
+.correct {
+  @apply bg-green-300 text-white border border-green-500;
+}
+
+.wrong {
+  @apply bg-red-300 text-white border border-red-500;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useGlobalContext } from "../context";
 import Question from "../components/Question";
 import { Link } from "react-router-dom";
@@ -15,10 +15,17 @@ function ExamsPage() {
     questions[selectedNumber]
   );
 
-  const [lock, setLock] = useState(true)
+  const [lock, setLock] = useState(true);
 
   const [optionChoosen, setOptionChoosen] = useState("");
   const [score, setScore] = useState(0);
+
+  let option1 = useRef(null);
+  let option2 = useRef(null);
+  let option3 = useRef(null);
+  let option4 = useRef(null);
+
+  let options = [option1, option2, option3, option4];
 
   const nextQuestion = () => {
     if (selectedNumber === questions.length - 1) {
@@ -31,6 +38,12 @@ function ExamsPage() {
         setScore(score + 1);
       }
     }
+
+     options.map((option) => {
+       console.log(option);
+       option.current.checked = false
+       return null;
+     });
   };
 
   const handleSubmit = () => {
@@ -48,6 +61,8 @@ function ExamsPage() {
     <>
       {gameState ? (
         <>
+          {/* THIS SHOWS AT THE END OF THE GAME, AFTER SUBMITTING  */}
+
           <div
             className={
               "bg-blue-400 mx-auto my-4 md:w-1/2 px-8 py-4 rounded-md sm:flex sm:flex-col"
@@ -69,7 +84,7 @@ function ExamsPage() {
                 Restart
               </button>
               <Link
-                to={'/faculty'}
+                to={"/faculty"}
                 className="bg-green-100 rounded py-2 w-full font-bold text-center text-green-600 uppercase mx-2"
                 onClick={() => {
                   gameStateToggle(), setScore(0);
@@ -106,10 +121,12 @@ function ExamsPage() {
             <Question
               key={selectedQuestion.id}
               {...selectedQuestion}
-              lock={lock}
-              setLock={setLock}
               selectedNumber={selectedNumber}
               setOptionChoosen={setOptionChoosen}
+              option1={option1}
+              option2={option2}
+              option3={option3}
+              option4={option4}
             />
             <div className="w-full flex">
               <div className="bg-green-100 rounded px-4 py-2 w-3/4 justify-center mx-auto">

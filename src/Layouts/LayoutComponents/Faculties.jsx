@@ -8,17 +8,20 @@ export default function Faculties({ sidebar, setSidebar }) {
   const faculties = [...new Set(databank.map((faculty) => faculty.faculty))];
 
   return (
+    // NAVBAR COMPONENT THAT SHOWS ALL THE FACULTIES IN THE DATABASE 
     <div className={`${sidebar ? "block" : "flex"}`}>
       {faculties.map((faculty, i) => {
         return (
-          <p className={`${sidebar && "py-2"}`}>
+          <p key={i} className={`${sidebar && "py-2"}`}>
             <Link
               key={i}
               className="text-white mr-6"
               to={"/faculty/"}
               onClick={() => {
                 loadFaculty(faculty);
-                {sidebar && setSidebar((sidebar)=>!sidebar)}
+                {
+                  sidebar && setSidebar((sidebar) => !sidebar);
+                }
               }}
             >
               {" "}

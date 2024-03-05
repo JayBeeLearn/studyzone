@@ -2,12 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import databank from "../assets/data";
 import { AppContext, useGlobalContext } from "../context";
+import EachCourse from "../components/EachCourse";
 
 function HomePage() {
-  const { examCourse, faculty, loadFaculty } = useGlobalContext();
+  const { examCourse, loadFaculty } = useGlobalContext();
 
   const faculties = [...new Set(databank.map((faculty) => faculty.faculty))];
   // console.log(faculties);
+
+  const lastItem = databank.length - 5;
 
   return (
     <>
@@ -15,8 +18,11 @@ function HomePage() {
         <h2 className="text-2xl m:text-3xl font-bold text-center text-blue-400">
           Welcome to Study Zone for NOUNITES
         </h2>
-
-
+        <div className="grid sm:grid-cols-2 md:grid-cols-3  ">
+          {databank.slice(lastItem, lastItem + 5).map((course) => {
+            return <EachCourse key={course.id} {...course} />;
+          })}
+        </div>
 
         {/* THE FIRST PROTOTYPE - BEFORE ADDING A NAVBAR FOR THE FACULTIES */}
         {/* <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 ">

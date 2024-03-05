@@ -50,7 +50,7 @@ function StudyPage() {
       } else {
         e.target.classList.add("wrong");
         let propertyIndex = propIndex(selectedQuestion.answer) - 1;
-        console.log(propertyIndex);
+        // console.log(propertyIndex);
 
         optionArray[propertyIndex].current.classList.add("correct");
         setLock(!lock);

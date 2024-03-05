@@ -7,62 +7,110 @@ function Question({
   optionB,
   optionC,
   optionD,
+  option1,
+  option2,
+  option3,
+  option4,
   answer,
   selectedNumber,
   setOptionChoosen,
-  lock,
-  setLock,
 }) {
-  const [select, setSelect] = useState(false);
+  const [select, setSelect] = useState("a");
   return (
     <>
+      {/* The question  */}
       <p className="text-2xl py-4  text-white">
         {" "}
         {selectedNumber + 1}. {question}
       </p>
-      <li className="answer">
-        <button
-          className={select ? "active" : "answer-btn"}
-          onClick={(select) => {
-            setOptionChoosen("optionA");
-          }}
-        >
+
+      {/* option A */}
+
+      <label
+        for="optionA"
+        className={`${select} ? "active" : "answer-btn"`}
+        onClick={(select) => {
+          setOptionChoosen("optionA");
+        }}
+      >
+        <li className="answer">
+          <input
+            className="mx-4"
+            type="radio"
+            id="optionA"
+            name="selectedOption"
+            ref={option1}
+          />
           {optionA}
-        </button>
-      </li>
+        </li>
+      </label>
 
-      <li className="answer">
-        <button
-          className={select ? "active" : "answer-btn"}
-          onClick={(select) => {
-            setOptionChoosen("optionB");
-          }}
-        >
+      {/* option B  */}
+
+      <label
+        for="optionB"
+        className={`${select} ? "active" : "answer-btn"`}
+        onClick={(select) => {
+          setOptionChoosen("optionB");
+        }}
+      >
+        <li className="answer">
+          <input
+            className="mx-4"
+            type="radio"
+            id="optionB"
+            name="selectedOption"
+            ref={option2}
+          />
+
           {optionB}
-        </button>
-      </li>
+        </li>{" "}
+      </label>
 
-      <li className="answer">
-        <button
-          className={select ? "active" : "answer-btn"}
-          onClick={(select) => {
-            setOptionChoosen("optionC");
-          }}
-        >
+      {/* option C  */}
+
+      <label
+        for="optionC"
+        className={`${select} ? "active" : "answer-btn"`}
+        onClick={(select) => {
+          setOptionChoosen("optionC");
+        }}
+      >
+        <li className="answer">
+          <input
+            className="mx-4"
+            type="radio"
+            id="optionC"
+            name="selectedOption"
+            ref={option3}
+          />
+
           {optionC}
-        </button>
-      </li>
+        </li>{" "}
+      </label>
 
-      <li className="answer">
-        <button
-          className={select ? "active" : "answer-btn"}
-          onClick={(select) => {
-            setOptionChoosen("optionD");
-          }}
-        >
+      {/* option D  */}
+
+      <label
+        for="optionD"
+        className={`${select} ? "active" : "answer-btn"`}
+        onClick={(select) => {
+          setOptionChoosen("optionD");
+        }}
+      >
+        <li className="answer">
+          <input
+            className="mx-4"
+            type="radio"
+            id="optionD"
+            name="selectedOption"
+            ref={option4}
+          />
           {optionD}
-        </button>
-      </li>
+        </li>{" "}
+      </label>
+
+      {/* <button>unchecked</button> */}
 
       {/* <li>{answer}</li> */}
     </>

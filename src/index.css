@@ -22,7 +22,7 @@ a {
 }
 
 .answer-btn {
-  @apply w-full text-left;
+  @apply w-full h-full text-left;
 }
 
 .study-answer {
@@ -40,10 +40,6 @@ a {
 .wrong {
   @apply bg-red-300 text-white border border-red-500;
 }
-
-
-
-
 
 .transit {
   transition: all 0.7s;

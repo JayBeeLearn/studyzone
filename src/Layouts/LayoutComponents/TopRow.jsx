@@ -5,7 +5,7 @@ import Faculties from "./Faculties";
 import { document } from "postcss";
 
 function TopRow() {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
   return (
     <>
       <div className="flex w-100 h-[4rem] bg-green-600 p-2 md:px-16 justify-between  items-center ">

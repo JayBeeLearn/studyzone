@@ -6,7 +6,7 @@ import { document } from "postcss";
 import { useGlobalContext } from "../../context";
 
 function TopRow() {
-  const { searchQuery, queriedCourses } = useGlobalContext();
+  const { searchQuery, queriedCourses, loadCourse } = useGlobalContext();
   const [sidebar, setSidebar] = useState(false);
   const [query, setQuery] = useState("");
 
@@ -90,6 +90,7 @@ function TopRow() {
                 <Link
                   to={`/faculty/${course.courseCode}`}
                   onClick={() => {
+                    loadCourse(course.courseCode);
                     setQuery("");
                   }}
                 >

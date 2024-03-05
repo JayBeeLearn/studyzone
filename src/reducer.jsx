@@ -28,6 +28,20 @@ const reducer = (state, action) => {
     // console.log(toGameState);
     return { ...state, gameState: !toGameState };
   }
+
+  if (action.type === "SEARCH_QUERY") {
+    let queryResult = databank.filter(
+      (course) =>
+        course.courseCode
+          .toLowerCase()
+          .includes(action.payload.toLowerCase()) ||
+        course.courseTitle.toLowerCase().includes(action.payload.toLowerCase())
+    );
+
+    console.log(queryResult);
+
+    return { ...state, queriedCourses: queryResult };
+  }
   return state;
 };
 

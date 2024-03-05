@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaSearch } from "react-icons/fa";
 import Faculties from "./Faculties";
 import { document } from "postcss";
+import { useGlobalContext } from "../../context";
 
 function TopRow() {
+  const { searchQuery, queriedCourses } = useGlobalContext();
   const [sidebar, setSidebar] = useState(false);
+  const [query, setQuery] = useState("");
+
+  const handleQuery = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <div className="flex w-100 h-[4rem] bg-green-600 p-2 md:px-16 justify-between  items-center ">
@@ -18,13 +25,24 @@ function TopRow() {
           </Link>
         </div>
 
+        {/* SEARCH BOX ON TOP ROW  */}
         <div className="flex justify-items-center items-center mr-4">
           <div className="mx-2 search   ">
-            <input
-              className="rounded-md p-2 w-[7rem]  placeholder:text-sm sm:w-fit  sm:placeholder:text-xl"
-              type="text"
-              placeholder="Locate courses"
-            />
+            <div className="flex bg-white rounded justify-between items-center px-2">
+              <input
+                className="rounded-md outline-none p-2 w-[7rem]  placeholder:text-sm sm:w-fit  sm:placeholder:text-xl"
+                type="text"
+                placeholder="Locate courses"
+                value={query}
+                onChange={(e) => {
+                  setQuery(e.target.value), searchQuery(query);
+                }}
+              />
+
+              <button type="submit" className="text-green-600">
+                <FaSearch />
+              </button>
+            </div>
           </div>
 
           <div className=" w-1/12 nav-bar sm:hidden">
@@ -45,10 +63,12 @@ function TopRow() {
         </div>
       </div>
 
+      {/* NAVBAR CONTENTS ON LARGE SCREENS  */}
       <div className="hidden sm:flex bg-green-500 h-8 px-4">
         <Faculties />
       </div>
 
+      {/* NAVBAR CONTENTS ON SIDEBAR FOR SMALL SCREENS  */}
       <div className="flex justify-end sm:hidden">
         <div
           id="sidebar"
@@ -59,6 +79,27 @@ function TopRow() {
           <Faculties sidebar={sidebar} setSidebar={setSidebar} />
         </div>
       </div>
+
+      {/* SEARCH RESULTS  */}
+      {query && (
+        <div className="absolute w-1/2 top-16 flex justify-center ">
+          <div className="bg-green-600  p-4">
+            <h2 className="text-2xl text-center">Query Results </h2>
+            {queriedCourses.map((course) => {
+              return (
+                <Link
+                  to={`/faculty/${course.courseCode}`}
+                  onClick={() => {
+                    setQuery("");
+                  }}
+                >
+                  <li className="text-white list-none">{course.courseTitle}</li>{" "}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </>
   );
 }

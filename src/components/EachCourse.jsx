@@ -5,7 +5,7 @@ import { useGlobalContext } from "../context";
 function EachCourse({ id, courseCode, courseTitle, faculty, questions }) {
   const { takeExams, loadFaculty } = useGlobalContext();
   return (
-    <div className="border m-2 p-4 flex flex-col">
+    <div className="border rounded m-2 p-4 flex flex-col">
       <div className="h-[75%]">
         <p className="text-lg font-bold text-center">{courseCode}</p>
         <Link

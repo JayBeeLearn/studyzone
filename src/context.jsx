@@ -8,6 +8,7 @@ const initialState = {
   faculty: [],
   examCourse: [],
   gameState: false,
+  queriedCourses: [],
 };
 
 const AppProvider = ({ children }) => {
@@ -33,8 +34,12 @@ const AppProvider = ({ children }) => {
     dispatch({type: 'TOGGLE_GAME_STATE'})
   }
 
+  const searchQuery = (query)=>{
+    dispatch({type: 'SEARCH_QUERY', payload:query})
+  }
+
   return (
-    <AppContext.Provider value={{ ...state, takeExams, loadFaculty, loadCourse, gameStateToggle }}>
+    <AppContext.Provider value={{ ...state, takeExams, loadFaculty, loadCourse, gameStateToggle, searchQuery }}>
       {children}
     </AppContext.Provider>
   );

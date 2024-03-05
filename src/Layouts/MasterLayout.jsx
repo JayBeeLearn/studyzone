@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 
 function MasterLayout() {
   return (
-    <div className="container">
+    <div className="w-full">
      
       <TopRow />
 

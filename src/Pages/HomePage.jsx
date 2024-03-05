@@ -15,10 +15,14 @@ function HomePage() {
         <h2 className="text-2xl m:text-3xl font-bold text-center text-blue-400">
           Welcome to Study Zone for NOUNITES
         </h2>
-        <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 ">
+
+
+
+        {/* THE FIRST PROTOTYPE - BEFORE ADDING A NAVBAR FOR THE FACULTIES */}
+        {/* <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 ">
           {faculties.map((data, i) => {
             return (
-              <p className=" text-xl">
+              <p className=" text-xl" key={i}>
                 {" "}
                 <Link
                   key={i}
@@ -27,6 +31,7 @@ function HomePage() {
                   onClick={() => {
                     loadFaculty(data);
                   }}
+                
                 >
                   {" "}
                   Faculty of {data}
@@ -34,7 +39,7 @@ function HomePage() {
               </p>
             );
           })}
-        </div>
+        </div> */}
         {/* <Link to={"/faculty"}>Faculty of Education</Link>
         <Link to={"/faculty"}>Directorate of General Studies</Link> */}
       </div>

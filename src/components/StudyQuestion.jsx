@@ -120,9 +120,9 @@ function StudyQuestion({
                   <div className="bg-red-300 rounded px-4 py-2 my-2 mx-8">
                     {" "}
                     <p className="flex items-center">
-                      <span className="mr-4 text-red-600 text-xl">
+                      <span className="mr-4 text-red-600 text-xl font-bold">
                         {" "}
-                        <FaWizardsOfTheCoast />{" "}
+                        X
                       </span>
                       <p>
                         Oops, that was wrong. The correct answer would have been{" "}

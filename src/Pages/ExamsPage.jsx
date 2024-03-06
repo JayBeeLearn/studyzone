@@ -28,27 +28,49 @@ function ExamsPage() {
   let options = [option1, option2, option3, option4];
 
   const nextQuestion = () => {
+    // RETURNS TO THE BEGINNING OF THE LIST WHEN IT GETS TO AN END
     if (selectedNumber === questions.length - 1) {
       setSelectedNumber(0);
       setSelectedQuestion(questions[0]);
     } else {
       setSelectedNumber(++selectedNumber);
       setSelectedQuestion(questions[selectedNumber]);
-      if (selectedQuestion.answer === optionChoosen) {
-        setScore(score + 1);
+      if (selectedQuestion.type === "MCQ") {
+        if (selectedQuestion.answer === optionChoosen) {
+          setScore(score + 1);
+        }
+      } else {
+        if (
+          selectedQuestion.answer1.toLowerCase() ==
+            optionChoosen.toLowerCase() ||
+          selectedQuestion.answer2.toLowerCase() == optionChoosen.toLowerCase()
+        ) {
+          setScore(score + 1);
+        }
       }
     }
 
-     options.map((option) => {
-       console.log(option);
-       option.current.checked = false
-       return null;
-     });
+    options.map((option) => {
+      if (option.current.checked) {
+        option.current.checked = false;
+        // WILL STILL WORK EVEN IF THE NULL IS ACTIVE
+        // return null;
+      }
+    });
   };
 
   const handleSubmit = () => {
-    if (selectedQuestion.answer === optionChoosen) {
-      setScore(score + 1);
+    if (selectedQuestion.type === "MCQ") {
+      if (selectedQuestion.answer === optionChoosen) {
+        setScore(score + 1);
+      }
+    } else {
+      if (
+        selectedQuestion.answer1.toLowerCase() == optionChoosen.toLowerCase() ||
+        selectedQuestion.answer2.toLowerCase() == optionChoosen.toLowerCase()
+      ) {
+        setScore(score + 1);
+      }
     }
     setSelectedNumber(0);
     setSelectedQuestion(questions[0]);
@@ -118,6 +140,7 @@ function ExamsPage() {
           </h2>
 
           <div className="bg-blue-400 mx-auto my-4 md:w-1/2 px-8 py-4 rounded-md">
+            {score}
             <Question
               key={selectedQuestion.id}
               {...selectedQuestion}

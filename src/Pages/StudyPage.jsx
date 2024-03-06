@@ -17,6 +17,7 @@ function StudyPage() {
   );
   const [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
+  const [displayAnswer, setDisplayAnswer] = useState(false);
 
   let option1 = useRef(null);
   let option2 = useRef(null);
@@ -43,43 +44,68 @@ function StudyPage() {
 
   const checkAns = (e, ans) => {
     if (!lock) {
-      if (selectedQuestion.answer === ans) {
-        e.target.classList.add("correct");
-        setScore(score + 1);
-        setLock(!lock);
-      } else {
-        e.target.classList.add("wrong");
-        let propertyIndex = propIndex(selectedQuestion.answer) - 1;
-        // console.log(propertyIndex);
+      if (selectedQuestion.type === "MCQ") {
+        if (selectedQuestion.answer === ans) {
+          e.target.classList.add("correct");
+          setScore(score + 1);
+          setLock(!lock);
+        } else {
+          e.target.classList.add("wrong");
+          let propertyIndex = propIndex(selectedQuestion.answer) - 1;
 
-        optionArray[propertyIndex].current.classList.add("correct");
-        setLock(!lock);
+          optionArray[propertyIndex].current.classList.add("correct");
+          setLock(!lock);
+        }
+      } else {
+        if (
+          selectedQuestion.answer1.toLowerCase() == ans.toLowerCase() ||
+          selectedQuestion.answer2.toLowerCase() == ans.toLowerCase()
+        ) {
+          setLock(!lock);
+          setDisplayAnswer(true);
+          setScore(score + 1);
+        } else {
+          setLock(!lock);
+          setDisplayAnswer(true);
+        }
       }
     }
   };
 
   const nextQuestion = () => {
     if (lock) {
-      setSelectedNumber(++selectedNumber);
-      setSelectedQuestion(questions[selectedNumber]);
-      optionArray.map((option) => {
-        option.current.classList.remove("correct");
-        option.current.classList.remove("wrong");
-        return null;
-      });
-      setLock(false);
+      if (selectedQuestion.type === "MCQ") {
+        setSelectedNumber(++selectedNumber);
+        setSelectedQuestion(questions[selectedNumber]);
+        optionArray.map((option) => {
+          option.current.classList.remove("correct");
+          option.current.classList.remove("wrong");
+          return null;
+        });
+        setLock(false);
+      } else {
+        setLock(false);
+        setSelectedNumber(++selectedNumber);
+        setSelectedQuestion(questions[selectedNumber]);
+        setDisplayAnswer(false);
+      }
     }
   };
 
   const handleSubmit = () => {
     if (lock) {
-      optionArray.map((option) => {
-        option.current.classList.remove("correct");
-        option.current.classList.remove("wrong");
-        return null;
-      });
-      setLock(false);
-      gameStateToggle();
+      if (selectedQuestion.type === "MCQ") {
+        optionArray.map((option) => {
+          option.current.classList.remove("correct");
+          option.current.classList.remove("wrong");
+          return null;
+        });
+        setLock(false);
+        gameStateToggle();
+      } else {
+        setLock(false);
+        gameStateToggle();
+      }
     }
   };
 
@@ -110,6 +136,7 @@ function StudyPage() {
                 className="bg-green-100 rounded py-2 w-full font-bold text-green-600 uppercase mx-2"
                 onClick={() => {
                   restartStudy();
+                  setDisplayAnswer(false);
                 }}
               >
                 Restart
@@ -118,6 +145,7 @@ function StudyPage() {
                 to={"/faculty"}
                 className="bg-green-100 rounded py-2 w-full font-bold text-center text-green-600 uppercase mx-2"
                 onClick={() => {
+                  setDisplayAnswer(false);
                   gameStateToggle(), setScore(0);
                 }}
               >
@@ -149,6 +177,7 @@ function StudyPage() {
           </h2>
 
           <div className="bg-blue-300 mx-auto my-4 md:w-1/2 px-8 py-4 rounded-md">
+            {/* {lock ? "yes" : "no"} */}
             <StudyQuestion
               key={selectedQuestion.id}
               {...selectedQuestion}
@@ -158,6 +187,8 @@ function StudyPage() {
               option2={option2}
               option3={option3}
               option4={option4}
+              displayAnswer={displayAnswer}
+              lock={lock}
             />
             <div className="w-full flex">
               <div className="bg-blue-100 rounded px-4 py-2 w-3/4 justify-center mx-auto">

@@ -10,10 +10,16 @@ function StudyPage() {
 
   const { courseTitle, courseCode, faculty, questions } = exams;
 
-  let [selectedNumber, setSelectedNumber] = useState(0);
+  // let [selectedNumber, setSelectedNumber] = useState(0);
+  const [studyQuestions, setStudyQuestions] = useState(questions);
+  const [numberOfQuestions] = useState(70);
+  const [currentNumber, setCurrentNumber] = useState(1);
+
+  const randomNumber = Math.floor(Math.random() * studyQuestions.length);
+  const [fbanswer, setFbanswer] = useState("");
 
   const [selectedQuestion, setSelectedQuestion] = useState(
-    questions[selectedNumber]
+    studyQuestions[randomNumber]
   );
   const [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
@@ -57,26 +63,37 @@ function StudyPage() {
           setLock(!lock);
         }
       } else {
+        // combines two layer of CONDITION CHECKER - the OR will ONLY WORK is there is ANSWER2
         if (
           selectedQuestion.answer1.toLowerCase() == ans.toLowerCase() ||
-          selectedQuestion.answer2.toLowerCase() == ans.toLowerCase()
+          (selectedQuestion.answer2 &&
+            selectedQuestion.answer2.toLowerCase() == ans.toLowerCase())
         ) {
           setLock(!lock);
           setDisplayAnswer(true);
           setScore(score + 1);
         } else {
-          setLock(!lock);
           setDisplayAnswer(true);
+          setLock(!lock);
         }
       }
     }
   };
 
+  const freshQuestions = studyQuestions.filter((question, i) => {
+    if (i != randomNumber) {
+      return question;
+    }
+  });
+
   const nextQuestion = () => {
     if (lock) {
+      setFbanswer("");
+      setCurrentNumber(currentNumber + 1);
+      setStudyQuestions(freshQuestions);
       if (selectedQuestion.type === "MCQ") {
-        setSelectedNumber(++selectedNumber);
-        setSelectedQuestion(questions[selectedNumber]);
+        // setSelectedNumber(++selectedNumber);
+        setSelectedQuestion(studyQuestions[randomNumber]);
         optionArray.map((option) => {
           option.current.classList.remove("correct");
           option.current.classList.remove("wrong");
@@ -85,8 +102,8 @@ function StudyPage() {
         setLock(false);
       } else {
         setLock(false);
-        setSelectedNumber(++selectedNumber);
-        setSelectedQuestion(questions[selectedNumber]);
+        // setSelectedNumber(++selectedNumber);
+        setSelectedQuestion(studyQuestions[randomNumber]);
         setDisplayAnswer(false);
       }
     }
@@ -112,9 +129,13 @@ function StudyPage() {
   const restartStudy = () => {
     setScore(0);
     gameStateToggle();
-    setSelectedNumber(0);
-    setSelectedQuestion(questions[0]);
+    // setSelectedNumber(0);
+    // setSelectedQuestion(questions[0]);
   };
+
+  console.log(numberOfQuestions);
+  console.log(currentNumber);
+  console.log(questions.length);
 
   return (
     <>
@@ -128,7 +149,10 @@ function StudyPage() {
             <h1 className="text-2xl text-white text-center my-4 mb-8">
               <span className="text-red-200 text-3xl">The End!</span> <br /> You
               Scored {score} out of possible {""}
-              {questions.length} questions
+              {questions.length >= 70
+                ? numberOfQuestions
+                : questions.length}{" "}
+              questions
             </h1>
 
             <div className="w-3/4 mx-auto flex">
@@ -137,6 +161,9 @@ function StudyPage() {
                 onClick={() => {
                   restartStudy();
                   setDisplayAnswer(false);
+                  setCurrentNumber(1);
+
+                  setStudyQuestions(questions);
                 }}
               >
                 Restart
@@ -181,7 +208,8 @@ function StudyPage() {
             <StudyQuestion
               key={selectedQuestion.id}
               {...selectedQuestion}
-              selectedNumber={selectedNumber}
+              // selectedNumber={selectedNumber}
+              currentNumber={currentNumber}
               checkAns={checkAns}
               option1={option1}
               option2={option2}
@@ -189,16 +217,20 @@ function StudyPage() {
               option4={option4}
               displayAnswer={displayAnswer}
               lock={lock}
+              fbanswer={fbanswer}
+              setFbanswer={setFbanswer}
             />
             <div className="w-full flex">
               <div className="bg-blue-100 rounded px-4 py-2 w-3/4 justify-center mx-auto">
-                {questions.length === selectedNumber + 1 ? (
+                {currentNumber === numberOfQuestions ||
+                currentNumber === questions.length ? (
                   <button
                     to={"/faculty/:courseCode/summary"}
                     className="w-full font-bold text-green-600 uppercase"
                     onClick={() => {
                       handleSubmit();
                     }}
+                    tabIndex={4}
                   >
                     {" "}
                     Submit
@@ -209,6 +241,7 @@ function StudyPage() {
                       nextQuestion();
                     }}
                     className="w-full font-bold text-green-600 uppercase"
+                    tabIndex={3}
                   >
                     {" "}
                     Next{" "}
@@ -218,7 +251,8 @@ function StudyPage() {
             </div>
 
             <p className="py-2">
-              Question {selectedNumber + 1} of {questions.length}
+              Question {currentNumber} of{" "}
+              {questions.length >= 70 ? numberOfQuestions : questions.length}
             </p>
           </div>
         </div>

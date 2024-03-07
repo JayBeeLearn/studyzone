@@ -22,13 +22,15 @@ function StudyQuestion({
   answer1,
   answer2,
   displayAnswer,
+  currentNumber,
+  fbanswer,
+  setFbanswer,
 }) {
-  const [fbanswer, setFbanswer] = useState("");
   return (
     <div className="study">
       <p className="text-2xl py-4  text-white">
         {" "}
-        {selectedNumber + 1}. {question}
+        {currentNumber}. {question}
       </p>
       {type === "MCQ" ? (
         <>
@@ -85,28 +87,31 @@ function StudyQuestion({
               {" "}
               <input
                 type="text"
+                value={fbanswer}
                 className=" outline-none bg-transparent "
                 onChange={(e) => {
                   if (!lock) {
                     setFbanswer(e.target.value);
                   }
                 }}
+                tabIndex={1}
               />
-              <span
+              <button
                 className=" bg-blue-500 py-2 rounded-r px-2 text-white cursor-pointer"
                 onClick={() => checkAns(answer1, fbanswer)}
+                tabIndex={2}
               >
                 Check Answer
-              </span>
+              </button>
               {/* <span>  </span> */}
             </div>
           </div>
           <div className="px-8">
             {displayAnswer && (
               <>
-                {" "}
                 {fbanswer.toLowerCase() == answer1.toLowerCase() ||
-                fbanswer.toLowerCase() == answer2.toLowerCase() ? (
+                ({ answer2 } &&
+                  fbanswer.toLowerCase() == answer1.toLowerCase()) ? (
                   <div className="bg-green-300 rounded px-4 py-2 my-2 mx-8">
                     <p className="flex items-center">
                       <span className="text-green-600 mr-4 text-xl">
@@ -119,18 +124,29 @@ function StudyQuestion({
                 ) : (
                   <div className="bg-red-300 rounded px-4 py-2 my-2 mx-8">
                     {" "}
-                    <p className="flex items-center">
+                    <div className="flex items-center">
                       <span className="mr-4 text-red-600 text-xl font-bold">
                         {" "}
                         X
                       </span>
-                      <p>
-                        Oops, that was wrong. The correct answer would have been{" "}
-                        <span className="font-bold text-lg">{answer1}</span> or{" "}
-                        <span className="font-bold text-lg">{answer2}</span>.
-                        Keep trying.{" "}
-                      </p>
-                    </p>
+                      {answer2 ? (
+                        <p>
+                          Oops, that was wrong. The correct answer would have
+                          been{" "}
+                          <span className="font-bold text-lg">{answer1}</span>{" "}
+                          or {""}
+                          <span className="font-bold text-lg">{answer2}</span>.
+                          Keep trying.{" "}
+                        </p>
+                      ) : (
+                        <p>
+                          Oops, that was wrong. The correct answer would have
+                          been{" "}
+                          <span className="font-bold text-lg">{answer1}</span>.
+                          Keep trying.{" "}
+                        </p>
+                      )}
+                    </div>
                   </div>
                 )}
               </>

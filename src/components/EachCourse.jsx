@@ -24,7 +24,7 @@ function EachCourse({ id, courseCode, courseTitle, faculty, questions }) {
         <Link
           to={`/faculty/${courseCode}/study`}
           className="bg-blue-500 rounded py-1 px-4 text-white"
-          onClick={() => takeExams(id)}
+          onClick={() => {takeExams(id); loadFaculty(faculty)}}
         >
           Study
         </Link>

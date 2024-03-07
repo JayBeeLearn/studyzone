@@ -8,11 +8,11 @@ export default function Faculties({ sidebar, setSidebar }) {
   const faculties = [...new Set(databank.map((faculty) => faculty.faculty))];
 
   return (
-    // NAVBAR COMPONENT THAT SHOWS ALL THE FACULTIES IN THE DATABASE 
-    <div className={`${sidebar ? "block" : "flex"}`}>
+    // NAVBAR COMPONENT THAT SHOWS ALL THE FACULTIES IN THE DATABASE
+    <div className={`${sidebar ? "block mx-" : "flex"} `}>
       {faculties.map((faculty, i) => {
         return (
-          <p key={i} className={`${sidebar && "py-2"}`}>
+          <p key={i} className={`${sidebar && "py-2 mx-16  text-xl"}`}>
             <Link
               key={i}
               className="text-white mr-6"
@@ -25,7 +25,7 @@ export default function Faculties({ sidebar, setSidebar }) {
               }}
             >
               {" "}
-              Faculty of {faculty}{" "}
+              {faculty}{" "}
             </Link>
           </p>
         );

@@ -14,17 +14,19 @@ function Question({
   answer1,
   answer2,
   type,
-  selectedNumber,
+  // selectedNumber,
   setOptionChoosen,
+  currentNumber,
+  fbanswer,
+  setFbanswer,
 }) {
   const [select, setSelect] = useState("a");
-  const [fbanswer, setFbanswer] = useState('')
   return (
     <>
       {/* The question  */}
       <p className="text-2xl py-4  text-white">
         {" "}
-        {selectedNumber + 1}. {question}
+        {currentNumber}. {question}
       </p>
 
       {type === "MCQ" ? (
@@ -112,7 +114,17 @@ function Question({
       ) : (
         <>
           <div className="answer">
-            <input className="outline-none" type="text" onChange={(e)=>setFbanswer(e.target.value)} onMouseLeave={()=>setOptionChoosen(fbanswer)} />
+            <input
+              className="outline-none w-full bg-transparent"
+              type="text"
+              onChange={(e) => {
+                setFbanswer(e.target.value);
+              }}
+              onMouseLeave={(e) => {
+                setOptionChoosen(fbanswer);
+              }}
+              value={fbanswer}
+            />
           </div>
         </>
       )}

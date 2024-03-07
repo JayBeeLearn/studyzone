@@ -19,7 +19,7 @@ function HomePage() {
           Welcome to Study Zone for NOUNITES
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3  ">
-          {databank.slice(lastItem, lastItem + 5).map((course) => {
+          {databank.slice(0, 6).map((course) => {
             return <EachCourse key={course.id} {...course} />;
           })}
         </div>

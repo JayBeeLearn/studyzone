@@ -13,6 +13,11 @@ function TopRow() {
   const handleQuery = (e) => {
     e.preventDefault();
   };
+
+  let courses = queriedCourses.map((course) => {
+    return course;
+  });
+
   return (
     <>
       <div className="flex w-100 h-[4rem] bg-green-600 p-2 md:px-16 justify-between  items-center ">
@@ -84,20 +89,28 @@ function TopRow() {
       {query && (
         <div className="absolute w-1/2 top-16 flex justify-center ">
           <div className="bg-green-600  p-4">
-            <h2 className="text-2xl text-center">Query Results </h2>
-            {queriedCourses.map((course) => {
-              return (
-                <Link
-                  to={`/faculty/${course.courseCode}`}
-                  onClick={() => {
-                    loadCourse(course.courseCode);
-                    setQuery("");
-                  }}
-                >
-                  <li className="text-white list-none">{course.courseTitle}</li>{" "}
-                </Link>
-              );
-            })}
+            <h2 className="text-2xl text-center font-bold text-white">
+              Query Results
+            </h2>
+            {queriedCourses.length >= 1 ? (
+              courses.map((course) => {
+                return (
+                  <Link
+                    to={`/faculty/${course.courseCode}`}
+                    onClick={() => {
+                      loadCourse(course.courseCode);
+                      setQuery("");
+                    }}
+                  >
+                    <li className="text-white list-none">
+                      {course.courseCode} {course.courseTitle}
+                    </li>
+                  </Link>
+                );
+              })
+            ) : (
+              <p className="text-white my-2">Not found. Try another term or limit the search term</p>
+            )}
           </div>
         </div>
       )}

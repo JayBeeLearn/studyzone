@@ -133,9 +133,7 @@ function StudyPage() {
     // setSelectedQuestion(questions[0]);
   };
 
-  console.log(numberOfQuestions);
-  console.log(currentNumber);
-  console.log(questions.length);
+  
 
   return (
     <>

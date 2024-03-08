@@ -202,8 +202,8 @@ function ExamsPage() {
           </h2>
 
           <div className="bg-blue-400 mx-auto my-4 md:w-1/2 px-8 py-4 rounded-md">
-            {score}
-            {fbanswer}
+            {/* {score}
+            {fbanswer} */}
             <Question
               key={selectedQuestion.id}
               {...selectedQuestion}

@@ -3489,8 +3489,7 @@ const databank = [
       },
       {
         type: "MCQ",
-        question:
-          "___________ are the components of sense experience theory",
+        question: "___________ are the components of sense experience theory",
         optionA: "idealists",
         optionB: "rationalists",
         optionC: "realists",
@@ -3607,8 +3606,7 @@ const databank = [
       },
       {
         type: "MCQ",
-        question:
-          "______________ is a general study of existence and reality",
+        question: "______________ is a general study of existence and reality",
         optionA: "meta-ethics",
         optionB: "metaphysics",
         optionC: "epistemology",
@@ -4458,101 +4456,947 @@ const databank = [
   },
   {
     id: 5,
-    faculty: "Management Science",
-    courseCode: "PUL102",
-    courseTitle: "Introduction to Public Institutions II",
+    faculty: "Science",
+    courseCode: "CIT102",
+    courseTitle: "Software Application Skills",
     creditUnit: 2,
     level: "100",
     semester: "2",
     questions: [
       {
         type: "MCQ",
-        question: "What is the capital of Nigeria?",
-        optionA: "Lagos",
-        optionB: "Abuja",
-        optionC: "Uyo",
-        optionD: "Enugu",
+        question: "The ___ is a standard input unit",
+        optionA: "Panel",
+        optionB: "Slot",
+        optionC: "Keyboard",
+        optionD: "Mouse Pad",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Generally __ can have different shapes depending on the setting",
+        optionA: "Prints",
+        optionB: "Loops",
+        optionC: "Blinds",
+        optionD: "Pointers",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "___ devices are used to convey results of computer processing",
+        optionA: "Peripheral",
+        optionB: "Storage",
+        optionC: "Output",
+        optionD: "Input",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Generally, the ___ panel provides the facility for installing other applications and new hardware devices into the computer system",
+        optionA: "Menu",
+        optionB: "Windows",
+        optionC: "Desktop",
+        optionD: "Control",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The __ Key is used to end the current line of the text and start a new one when typing.",
+        optionA: "Insert",
+        optionB: "Home",
+        optionC: "End",
+        optionD: "Enter",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "On pressing the Caps Lock key, an indicator light appears at the top __ corner of the keyboard",
+        optionA: "Right",
+        optionB: "Rear",
+        optionC: "Upper",
+        optionD: "Upper",
         answer: "optionB",
       },
       {
         type: "MCQ",
-        question: "What is the capital of Akwa Ibom?",
-        optionA: "Lagos",
-        optionB: "Abuja",
-        optionC: "Uyo",
-        optionD: "Itu",
+        question:
+          "Most electronic keyboards closely follow that of the __ keyboard",
+        optionA: "DWART",
+        optionB: "LEFT",
+        optionC: "QWERTY",
+        optionD: "RIGHT",
         answer: "optionC",
-      },
-      {
-        type: "FBQ",
-        question: "What is the capital of Cross River?",
-        answer1: "Calabar",
-        answer2: "Cally",
       },
       {
         type: "MCQ",
-        question: "What is the capital of Rivers?",
-        optionA: "Ibadan",
-        optionB: "Ikwere",
-        optionC: "Port Harcourt",
-        optionD: "Andoni",
+        question: "Jumping of instructions is a specific function of the __",
+        optionA: "Motherboard",
+        optionB: "ROM",
+        optionC: "RAM",
+        optionD: "CPU",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The input device precisely used for computer games is the ___",
+        optionA: "Jockey",
+        optionB: "Touchpad",
+        optionC: "Joystick",
+        optionD: "Mousepad",
         answer: "optionC",
       },
       {
+        type: "MCQ",
+        question:
+          "The ___ key of a mouse provides access to some menus that are related to what one may want to do with what is on the screen.",
+        optionA: "Menu",
+        optionB: "Secondary",
+        optionC: "Primary",
+        optionD: "Scroll",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Ordinarily, television channel signals can be received on the computer by means of an appropriate __ device.",
+        optionA: "Input",
+        optionB: "Chat",
+        optionC: "Communication",
+        optionD: "Output",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The Inkjet and Laser Jet Printers are classified as __ printers.",
+        optionA: "Non-radial",
+        optionB: "Non-impact",
+        optionC: "Non-serial",
+        optionD: "Nom-lethal",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question: "The mouse is commonly classified as a _____ device",
+        optionA: "Sliding",
+        optionB: "Rolling",
+        optionC: "Pointing",
+        optionD: "Mapping",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question: "The __ is the standard output unit",
+        optionA: "Pager",
+        optionB: "Joystick",
+        optionC: "Facsimile",
+        optionD: "Monitor",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "All the following are operations of the Central Processing Unit except the ___",
+        optionA: "Arithmetic operation",
+        optionB: "Data manipulation",
+        optionC: "Input and Output operations",
+        optionD: "output bit manipulation",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question: "The first generation computers used _________",
+        optionA: "Transistors",
+        optionB: "Vacuum tubes",
+        optionC: "Integrated circuits",
+        optionD: "Very large scale integrated circuits",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The very large scale integrated circuit was employed by the ______ generation computers",
+        optionA: "3rd",
+        optionB: "5th",
+        optionC: "2nd",
+        optionD: "4th",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question: "The first commercial electronic computer was the ______",
+        optionA: "Universal Automatic Computer",
+        optionB: "Electrical Integrated Computer",
+        optionC: "Electronic Discreet Computer",
+        optionD: "Automatic Relay Computer",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The first computer to perform arithmetic and logical operations using a stored-program was the ____",
+        optionA: "UNIVAC",
+        optionB: "DRAMAC",
+        optionC: "EDSAC",
+        optionD: "VACMAC",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Communication and information activities entail the creation, storage, communication of data and ___.",
+        optionA: "information",
+        optionB: "Forms",
+        optionC: "Keys",
+        optionD: "Icons",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "Originally, Babbage machines were___ in designs",
+        optionA: "Mechanical",
+        optionB: "Electrical",
+        optionC: "Artificial",
+        optionD: "Modular",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The __ system is important in computing because computers are designed to process, store and transmit data in the form of binary numbers and signals",
+        optionA: "integer",
+        optionB: "nominal",
+        optionC: "binary",
+        optionD: "decimal",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The first computer program was developed for Babbage's ___ Engine",
+        optionA: "Annotation",
+        optionB: "Analogue",
+        optionC: "Analytical",
+        optionD: "Automatic",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question: "The ____ generation computers used transistors.",
+        optionA: "5th",
+        optionB: "2nd",
+        optionC: "4th",
+        optionD: "3rd",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The __ generation computers are those expected to mimic human intelligence.",
+        optionA: "4th",
+        optionB: "3rd",
+        optionC: "5th",
+        optionD: "2nd",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question: "The third generation computers employed ____",
+        optionA: "Large scale integrated circuits",
+        optionB: "Vacuum tubes",
+        optionC: "Transistors",
+        optionD: "Integrated circuits",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "It is more expensive to produce __ Crystal Display used by laptops than the conventional monitor used by desktops.",
+        optionA: "Liquid",
+        optionB: "Logged",
+        optionC: "Lead",
+        optionD: "Light",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The __ makes it possible to interconnect directly or indirectly to all the other computer devices.",
+        optionA: "Microprocessor",
+        optionB: "Port",
+        optionC: "Joystick",
+        optionD: "Motherboard",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Normally, when the Caps Lock key on a standard keyboard is pressed, an indicator light appears at the top __ corner of that keyboard",
+        optionA: "Left",
+        optionB: "Hind",
+        optionC: "Right",
+        optionD: "Aerial",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The computer system reboots itself once the following combination of keys are pressed: ___",
+        optionA: "Shift + Alt +Del",
+        optionB: "End + Alt +Del",
+        optionC: "Ctrl + Alt +Del",
+        optionD: "Exit + Alt +Del",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question: "The ____ key is used to activate the start button",
+        optionA: "Caps",
+        optionB: "Tab",
+        optionC: "Windows",
+        optionD: "System",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The digital camera digitizes the image captured by converting them to __ with the appropriate colours.",
+        optionA: "Dots",
+        optionB: "Marquees",
+        optionC: "Bits",
+        optionD: "Signals",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The NUM ___ key is pressed when a user wants to use the numeric key",
+        optionA: "Tab",
+        optionB: "Print",
+        optionC: "Pad",
+        optionD: "Lock",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "The special all-in-one printer is commonly referred to as the __ device.",
+        optionA: "Input",
+        optionB: "Peripheral",
+        optionC: "Storage",
+        optionD: "Multi-function",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Generally various electronic tutorials today include sound components and ___",
+        optionA: "Twitters",
+        optionB: "Flashers",
+        optionC: "Speakers",
+        optionD: "Loggers",
+        answer: "optionC",
+      },
+
+      {
         type: "FBQ",
-        question: "What is the headquaters of Uruan?",
-        answer1: "Idu",
-        answer2: "idu uruan",
+        question:
+          "Ultimately, selecting an item in Microsoft Word is commonly referred to as ___.",
+        answer1: "Highlighting",
+      },
+      {
+        type: "FBQ",
+        question:
+          "In the course of typing, the __ key is used to terminate an existing line of the text and start a new line.",
+        answer1: "Enter",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of pressing the Primary or Secondary button gently is commonly referred to as ___.",
+        answer1: "Clicking",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The Single user operating system allows only one program to run in the main ___",
+        answer1: "Memory",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The graphical representation of a program is referred to as an ___",
+        answer1: "Icon",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The main goal of data __ is to facilitate effective creation, computation and analysis, storage and retrieval, transfer and delivery of data.",
+        answer1: "Management",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The Electronic ____ application is mainly used by accounting professionals",
+        answer1: "Spreadsheet",
+        answer2: "Spread sheet",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Editing is accomplished in a word __ by moving the cursor on the text screen to perform the necessary task.",
+        answer1: "Processor",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The command SAVE AS enables a user to change the file __ , File type and the folder to store the file",
+        answer1: "Name",
+      },
+      {
+        type: "FBQ",
+        question: "Generally, cursor control keys are also called __ keys.",
+        answer1: "Arrow",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Logically related computational units are gathered together in __.",
+        answer1: "Modules",
+      },
+      {
+        type: "FBQ",
+        question: "___ language deals with business problems.",
+        answer1: "COBOL",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The microphone is the ___ device that records voice data to the computer.",
+        answer1: "Input",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The default folder where Microsoft Office saves documents is in the My ___ folder",
+        answer1: "Documents",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Modeling software simply uses the power and speed of a computer machine to perform some mathematical calculations or ___ some real life situations.",
+        answer1: "Simulate",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Word ____ is the manipulation of characters by a machine to serve communication purposes.",
+        answer1: "Processing",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Electronic ___ application is majorly used in business by accounting professionals to perform financial calculations",
+        answer1: "Spreadsheet",
+      },
+      {
+        type: "FBQ",
+        question:
+          "___ management packages computerise the routine tasks of recording and filing of information.",
+        answer1: "Database",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Microsoft ____ is a very good example of Desktop Publishing package.",
+        answer1: "Publisher",
+      },
+      {
+        type: "FBQ",
+        question: "Microsoft ___ is an application used for presentations",
+        answer1: "PowerPoint",
+      },
+      {
+        type: "FBQ",
+        question: "Microsoft Word is an application used for __ preparation",
+        answer1: "Text",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Microsoft __ is a suitable application for easier calculation",
+        answer1: "Excel",
+      },
+      {
+        type: "FBQ",
+        question: "Oracle provides a platform for database ____",
+        answer1: "Application",
+        answer2: "Applications",
+      },
+      {
+        type: "FBQ",
+        question: "Formatting entails changing the ____ of a document.",
+        answer1: "Appearance",
+      },
+      {
+        type: "FBQ",
+        question: "Ordinarily, in a database table, fields are arranged as ___",
+        answer1: "Columns",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Ordinarily, there are __ cursor-control keys on a standard keyboard",
+        answer1: "Four",
+        answer2: 4,
+      },
+      {
+        type: "FBQ",
+        question:
+          "Generally ___ are used for storing information created by means of an application.",
+        answer1: "Files",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Typically, every drive has what is called a folder also known as a root ___",
+        answer1: "Directory",
+      },
+      {
+        type: "FBQ",
+        question:
+          "In the disk operating system, a file name cannot exceed __ characters",
+        answer1: "Eight",
+        answer2: 8,
+      },
+      {
+        type: "FBQ",
+        question:
+          "Database ___ Systems are applications that process data as records.",
+        answer1: "Management",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Debugging is process of removing program errors during software ___",
+        answer1: "Development",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A database __ is the group of records that bear all the data.",
+        answer1: "Table",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The third phase of software development involves coding the __",
+        answer1: "Program",
+        answer2: "Programme  ",
+      },
+      {
+        type: "FBQ",
+        question: "Generally the SPSS has its own Language and __",
+        answer1: "Commands",
+        answer2: "Command",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Ultimately, a flyer is prepared by means of a Desktop ____ application",
+        answer1: "Publishing",
       },
     ],
   },
   {
     id: 6,
     faculty: "Science",
-    courseCode: "BIO101",
-    courseTitle: "Introduction to Biology",
+    courseCode: "CIT104",
+    courseTitle: "Introduction to Computers",
     creditUnit: 2,
     level: "100",
-    semester: "1",
+    semester: "2",
     questions: [
       {
-        type: "MCQ",
-        question: "What is the capital of Nigeria?",
-        optionA: "Lagos",
-        optionB: "Abuja",
-        optionC: "Uyo",
-        optionD: "Enugu",
-        answer: "optionB",
-      },
-      {
-        type: "MCQ",
-        question: "What is the capital of Akwa Ibom?",
-        optionA: "Lagos",
-        optionB: "Abuja",
-        optionC: "Uyo",
-        optionD: "Itu",
-        answer: "optionC",
+        type: "FBQ",
+        question:
+          "The characteristic of a computer which enables it to manipulate large data at an incredible pace and response time is referred to as _______. ",
+        answer1: "Speed",
       },
       {
         type: "FBQ",
-        question: "What is the capital of Cross River?",
-        answer1: "Calabar",
-        answer2: "Cally",
-      },
-      {
-        type: "MCQ",
-        question: "What is the capital of Rivers?",
-        optionA: "Ibadan",
-        optionB: "Ikwere",
-        optionC: "Port Harcourt",
-        optionD: "Andoni",
-        answer: "optionC",
+        question:
+          "A computer program that accepts a source program in assembly language reads and translates the entire program into an equivalent program in machine language is called ______.",
+        answer1: "Assembler",
       },
       {
         type: "FBQ",
-        question: "What is the headquaters of Uruan?",
-        answer1: "Idu",
-        answer2: "idu uruan",
+        question:
+          "A program design aid that serves the function of a flowchart in expressing the detailed logic of a program is called ________",
+        answer1: "Pseudocode",
+      },
+      {
+        type: "FBQ",
+        question:
+          "In a flowchart, the boxes are linked by means of ______ which show the sequence of operations.",
+        answer1: "Arrows",
+      },
+      {
+        type: "FBQ",
+        question:
+          "In assembly language the storage address or location of the operands is expressed as a _____rather than the actual numeric address.",
+        answer1: "Symbol",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A visual picture which gives the steps of an algorithm and also the flow of control between the various steps is called a ______",
+        answer1: "Flowchart",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Storage ____ is a testing whereby the contents of the computers storage locations is printed out and the tester examines the contents of the various locations to determine the instruction at which the program is halted.",
+        answer1: "Dump",
+      },
+      {
+        type: "FBQ",
+        question:
+          "In computer programming, the type of instructions which cause the computer to alter the sequence of execution of instruction within the program is called _____ instructions",
+        answer1: "Branch",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A computer program that accepts a source program in one high-level language, reads and translates the entire user’s program into executable form is called ­­­­________",
+        answer1: "Compiler",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A program that accepts program in a source language, reads, translates into machine language and executes it, line by line is called ­­_______.",
+        answer1: "Interpreter",
+      },
+      {
+        type: "FBQ",
+        question:
+          " In a decision  table, the section which contains a list of all possible conditions which could apply in a particular problem is called conditions _______",
+        answer1: "Stub",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The basic resources of a computer system are provided by its hardware, software and _______",
+        answer1: "Data",
+      },
+      {
+        type: "FBQ",
+        question:
+          " In Visual basic Environment, the title screen that appears when your application first begins is called ______ screen",
+        answer1: "Splash",
+      },
+      {
+        type: "FBQ",
+        question:
+          " ________refers to a mechanism for controlling the access of programs, processes, or users to the resources defined by a computer controls to be imposed, together with some means of enforcement.",
+        answer1: "Protection",
+      },
+      {
+        type: "FBQ",
+        question: " A series of _______ linked together make up a software",
+        answer1: "Programs",
+      },
+      {
+        type: "FBQ",
+        question: " Mainframe computers are often called _____ crunches",
+        answer1: "Number",
+      },
+      {
+        type: "FBQ",
+        question:
+          " _______printers combine a magnetic roller with powdered ink called toner totransfer high-quality characters or images onto a page.",
+        answer1: "Laser",
+      },
+      {
+        type: "FBQ",
+        question:
+          " ______printers have small nozzle that actually spray fast-drying ink onto the page to form characters or images. Inkjet printers spray a fine, quick-drying ink through small nozzles to produce characters and images on paper.",
+        answer1: "Inkjet",
+      },
+      {
+        type: "FBQ",
+        question:
+          " A ______ purpose computer is one that is designed to solve a restricted class of problems.",
+        answer1: "Special",
+      },
+      {
+        type: "FBQ",
+        question:
+          " In a _____ computer the conversion element which accepts analog inputs, and output digital values is called digitizer",
+        answer1: "Hybrid",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The volume of work that a given computer handles is closely tied to the cost and the size of the _____ of the computer",
+        answer1: "Memory",
+      },
+      {
+        type: "FBQ",
+        question: " Microcomputers are also known as ________ board computers",
+        answer1: "Single",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The central processing unit is also referred to as a  ____ unit.",
+        answer1: "System",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The intelligent computer keyboard has ____ major divisions.",
+        answer1: 4,
+      },
+      {
+        type: "FBQ",
+        question: " The speed of a CPU is measured in _____",
+        answer1: "Megahertz",
+      },
+      {
+        type: "FBQ",
+        question: " The CPU does all the PC’s thinking and runs the _______.",
+        answer1: "Programs",
+      },
+      {
+        type: "FBQ",
+        question: " RAM stands for _________ Access Memory",
+        answer1: "Random",
+      },
+      {
+        type: "FBQ",
+        question:
+          " A ______ is simply a tool or machine used for processing data to give required information.",
+        answer1: "computer",
+      },
+      {
+        type: "FBQ",
+        question:
+          " ______ is referred to as facts about a person, object or place",
+        answer1: "Data",
+      },
+      {
+        type: "FBQ",
+        question:
+          " ______Is referred to as processed facts or a meaningful statement",
+        answer1: "Information",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The method of data processing that involves the use of chalk, wall, pen, pencil and the likes is _______ method",
+        answer1: "Manual",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The _______system is made up of the computer system, the user and the environment in which the computer is operated.",
+        answer1: "Computing",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The computer ______ comprises the Input unit, the processing unit and the output unit.",
+        answer1: "Hardware",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A _______is made up of group of instructions given to a computer to perform a task.",
+        answer1: "Program",
+      },
+      {
+        type: "FBQ",
+        question:
+          " ________computing devices proved to have the power, economics and scalability necessary to deal with large scale computations",
+        answer1: "Digital",
+      },
+      {
+        type: "FBQ",
+        question:
+          "In visual Basic Environment , ____ appear in the Project window ",
+        answer1: "Class properties",
+      },
+      {
+        type: "FBQ",
+        question: " _______ is NOT a toolbar in Visual basic Environment. ",
+        answer1: "Edit",
+      },
+      {
+        type: "FBQ",
+        question:
+          " Early computers were rarely owned by individuals but rather confined to the laboratories and few research institutes because_______.",
+        answer1: "They were large in size and too expensive ",
+      },
+      {
+        type: "FBQ",
+        question: "A computer is NOT capable of _____.",
+        answer1: "taking input data through the printer ",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The ___ of data processing involves the use of machines such as typewriter.",
+        answer1: "Electronic method",
+      },
+      {
+        type: "FBQ",
+        question:
+          " _____ method of data processing does NOT allow for the processing of large volume of data continuously in a timely manner.",
+        answer1: "Electronic",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The computer method of carrying out data processing has the following major features EXCEPT  ____",
+        answer1: "Data cannot be steadily and continuously processed",
+      },
+      {
+        type: "FBQ",
+        question: " The computer system is broadly made up of _________.",
+        answer1: "Keyboard and mouse",
+      },
+      {
+        type: "FBQ",
+        question: " The processing unit is made up of the _________ ",
+        answer1: "Input Unit, control unit and Display Unit Only",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The second generation also saw the first two supercomputers designed specifically for _________processing in scientific applications.",
+        answer1: "Numeric",
+      },
+      {
+        type: "FBQ",
+        question: "A hybrid machine is usually ______",
+        answer1: "a special-purpose device which is built for a general task",
+      },
+      {
+        type: "FBQ",
+        question: " DEC  stands for ______",
+        answer1: "Digital Equipment Component",
+      },
+      {
+        type: "FBQ",
+        question: " If your PC runs at 333MHz, the central clock ticks ______",
+        answer1: "666 million times every second",
+      },
+      {
+        type: "FBQ",
+        question:
+          " When the Shift key is pressed, the ________on the alphanumeric keys are activated",
+        answer1: "power control",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The _______controls and coordinates the use of the hardware among the various systems programs and application programs for the various users.",
+        answer1: "Random Access Memory",
+      },
+      {
+        type: "FBQ",
+        question:
+          " In order for a program to be executed, it must be __________",
+        answer1: "mapped to absolute addresses and loaded into memory",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Which of the following activities in connection with memory management is the operating system NOT responsible for ?",
+        answer1:
+          "Keep track of which parts of memory are currently being used and by whom.",
+      },
+      {
+        type: "FBQ",
+        question: "In a distributed system _____",
+        answer1: "all resources are central ",
+      },
+      {
+        type: "FBQ",
+        question: "Computers can run programs written only in ________",
+        answer1: "machine language",
+      },
+      {
+        type: "FBQ",
+        question:
+          " Which of the following is NOT a stage in program compilation?",
+        answer1: "Lexical analysis",
+      },
+      {
+        type: "FBQ",
+        question:
+          " Which of the following is NOT a basic type of instruction in computer programming?",
+        answer1: "arithmetic instructions",
+      },
+      {
+        type: "FBQ",
+        question:
+          " There are two basic types of branch instructions; namely_______",
+        answer1:
+          "unconditional branch instruction and conditional branch instruction",
+      },
+      {
+        type: "FBQ",
+        question:
+          " The type of branch  statement that causes the computer to branch to a statement only when certain conditions exist is called ______?",
+        answer1: "Conditional",
+      },
+      {
+        type: "FBQ",
+        question:
+          " Computer programming languages can be classified into the following categories EXCEPT  _______",
+        answer1: "Machine language",
+      },
+      {
+        type: "FBQ",
+        question:
+          " Each instruction in a machine language program consists of _____",
+        answer1: "operation code and operands",
+      },
+      {
+        type: "FBQ",
+        question: "In High level assembly which of the following is correct?",
+        answer1:
+          "Only a specific set of numbers, letters, and special characters may be used to write a high level program and special rules must be observed for punctuation.",
+      },
+      {
+        type: "FBQ",
+        question:
+          " Generally, the ___ memory is also known as the primary memory",
+        answer1: "Forte",
+      },
+      {
+        type: "FBQ",
+        question: " An example of a programming tool is _______",
+        answer1: "Task manager",
+      },
+      {
+        type: "FBQ",
+        question:
+          " A Fourth Generation (computer) Language (4GL) is a ________",
+        answer1: "procedural language",
+      },
+      {
+        type: "FBQ",
+        question: "The first step in developing a computer program is ______.",
+        answer1: "Problem definition",
       },
     ],
   },

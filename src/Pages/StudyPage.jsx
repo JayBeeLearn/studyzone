@@ -133,8 +133,6 @@ function StudyPage() {
     // setSelectedQuestion(questions[0]);
   };
 
-  
-
   return (
     <>
       {gameState ? (

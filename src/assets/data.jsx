@@ -5398,55 +5398,1337 @@ const databank = [
         question: "The first step in developing a computer program is ______.",
         answer1: "Problem definition",
       },
+      {
+        type: "MCQ",
+        question:
+          "How are steps or operations handled in special-purpose computers?",
+        optionA: "Built into the software",
+        optionB: "Built into the hardware",
+        optionC: "Managed by external devices",
+        optionD: "Randomly generated",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In what form does a digital computer represent its variables?",
+        optionA: "Binary form",
+        optionB: "Decimal form",
+        optionC: "Hexadecimal form",
+        optionD: "Octal form",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Which type of computer is mostly used in commercial and business places today?",
+        optionA: "Analog computer",
+        optionB: "Hybrid computer",
+        optionC: "Digital computer",
+        optionD: "Quantum computer",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What was the main limitation of the machine built byAtanasoff and Clifford Berry in 1941?",
+        optionA: "Not programmable",
+        optionB: "Too slow",
+        optionC: "Too large",
+        optionD: "Unreliable",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What was the primary purpose of the machine designed by Alan Turing for the British military in 1943?",
+        optionA: "Weather forecasting",
+        optionB: "Code breaking",
+        optionC: "Data encryption",
+        optionD: "Communication",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What type of variables do analog computers represent in terms of?",
+        optionA: "Numerical quantities",
+        optionB: "Physical variables",
+        optionC: "Alphabetical values",
+        optionD: "Symbolic representations",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question: "How do analog computers store data?",
+        optionA: "In the form of physical variables",
+        optionB: "In the form of binary code",
+        optionC: "In the form of alphabetical values",
+        optionD: "In the form of numerical quantities",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What advantage do analog computers have over digital voltmeters in terms of accuracy?",
+        optionA: "Higher accuracy",
+        optionB: "Lower accuracy",
+        optionC: "Equal accuracy",
+        optionD: "Variable accuracy",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "What is the purpose of a hybrid computer?",
+        optionA: "To combine analog and digital elements",
+        optionB: "To replace analog computers",
+        optionC: "To eliminate the need for converters",
+        optionD: "To enhance memory storage",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What type of problems are special-purpose computers designed to solve?",
+        optionA: "General problems",
+        optionB: "Restricted class of problems",
+        optionC: "Mathematical problems",
+        optionD: "Theoretical problems",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In a hybrid system, how is the analog computer connected to the digital computer?",
+        optionA: "As a separate entity",
+        optionB: "As a peripheral",
+        optionC: "As a competitor",
+        optionD: "As a substitute",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What advantage does a digital converter have over analog in terms of response time?",
+        optionA: "Slower response time",
+        optionB: "Real-time response",
+        optionC: "Intermittent response",
+        optionD: "Delayed response",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question: "What is the main application area of hybrid computers?",
+        optionA: "Finance and accounting",
+        optionB: "Aerospace and process control",
+        optionC: "Healthcare and education",
+        optionD: "Entertainment and gaming",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question: "What type of computer measures rather than counts?",
+        optionA: "Digital computer",
+        optionB: "Analog computer",
+        optionC: "Hybrid computer",
+        optionD: "Mechanical computer",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What distinguishes special-purpose computers from general-purpose computers?",
+        optionA: "Design complexity",
+        optionB: "Flexibility in operation",
+        optionC: "Memory capacity",
+        optionD: "Processing speed",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is the main characteristic of special-purpose computers compared to general-purpose computers?",
+        optionA: "They are more complex",
+        optionB: "They are cheaper",
+        optionC: "They have more components",
+        optionD: "They are less efficient",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "How are computers classified based on the type of signal being processed?",
+        optionA: "Analog, digital, hybrid",
+        optionB: "Mainframe, mini, micro",
+        optionC: "Desktop, laptop, palmtop",
+        optionD: "Oil refinery, chemical manufacture, steel processing",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "What does CPU stand for in the context of computers?",
+        optionA: "Central Processing Unit",
+        optionB: "Computer Processing Unit",
+        optionC: "Central Power Unit",
+        optionD: "Central Programming Unit",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In computer classification, what distinguishes microcomputers from other types?",
+        optionA: "Size reduction due to electronic advances",
+        optionB: "Being used in vehicle assembly plants",
+        optionC: "Being analog in nature",
+        optionD: "Being more complex than mainframes",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "What is the significance of the CPU in a computer system?",
+        optionA: "It is the most expensive component",
+        optionB: "It is responsible for data processing",
+        optionC: "It is used for power generation",
+        optionD: "It is a type of special-purpose computer",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Which type of computers are used in industries like oil refinery and power generation?",
+        optionA: "General-purpose computers",
+        optionB: "Analog computers",
+        optionC: "Special-purpose computers",
+        optionD: "Hybrid computers",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question: "How are computers classified based on their purpose?",
+        optionA: "By size",
+        optionB: "By type of signal being processed",
+        optionC: "By purpose",
+        optionD: "By number of components",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What distinguishes mainframe computers from mini computers and microcomputers?",
+        optionA: "Size",
+        optionB: "Type of signal being processed",
+        optionC: "Purpose",
+        optionD: "Complexity",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Why are special-purpose computers generally cheaper than general-purpose computers?",
+        optionA: "They involve fewer components",
+        optionB: "They are more complex",
+        optionC: "They are used in vehicle assembly plants",
+        optionD: "They are analog in nature",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In which generation did semiconductor memories start to be used instead of magnetic cores?",
+        optionA: "First generation",
+        optionB: "Second generation",
+        optionC: "Third generation",
+        optionD: "Fifth generation",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Why were early computers mainly confined to laboratories and research institutes?",
+        optionA: "Due to their large size and high cost",
+        optionB: "Lack of interest from individuals",
+        optionC: "Limited computing capabilities",
+        optionD: "Government restrictions",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What has led to the widespread use of computers in various fields today?",
+        optionA: "Advantages of computer data processing over manual methods",
+        optionB: "Decrease in computer size and cost",
+        optionC: "Limited availability of manual processing tools",
+        optionD: "Government regulations",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "What does the term 'computer generation' refer to?",
+        optionA: "Landmarks and milestones in computer development",
+        optionB: "Different eras of computer evolution",
+        optionC: "Types of computer users",
+        optionD: "Computer programming languages",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What characterizes the development of the next generation of computer systems?",
+        optionA: "Acceptance of parallel processing",
+        optionB: "Exclusive use of pipelining",
+        optionC: "Focus on single-core processors",
+        optionD: "Elimination of data storage",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In what way has computing become ubiquitous in modern times?",
+        optionA: "Embedded in various items we use",
+        optionB: "Limited to laboratory use",
+        optionC: "Restricted to scientific calculations",
+        optionD: "Only accessible to computer engineers",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "What components make up the computing system?",
+        optionA: "Computer system, users, and computing environment",
+        optionB: "Computer hardware only",
+        optionC: "Software programs only",
+        optionD: "Internet connection and peripherals",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What distinguishes the computer method of data processing from manual methods?",
+        optionA: "Superior efficiency",
+        optionB: "Higher cost",
+        optionC: "Slower processing speed",
+        optionD: "Limited data storage capacity",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "What is a key feature of the modern computer evolution?",
+        optionA: "Flexibility in generational classification",
+        optionB: "Rapid decrease in computing power",
+        optionC: "Isolation from other technological advancements",
+        optionD: "Static development process",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What technological advancement has significantly influenced computer development?",
+        optionA: "Acceptance of parallel processing",
+        optionB: "Exclusive use of sequential processing",
+        optionC: "Decrease in processor speed",
+        optionD: "Limited memory capacity",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Which generation of computer systems saw the use of large scale integration (LSI) and very large scale integration (VLSI) in the construction of computing elements?",
+        optionA: "First generation",
+        optionB: "Second generation",
+        optionC: "Third generation",
+        optionD: "Fifth generation",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What type of memories became standard on all computers by 1990?",
+        optionA: "Core memories",
+        optionB: "Magnetic memories",
+        optionC: "Semiconductor memories",
+        optionD: "Cache memories",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What was a significant innovation in the third generation of computer systems?",
+        optionA: "Introduction of time-sharing",
+        optionB: "Use of magnetic core memories",
+        optionC: "Development of microprogramming",
+        optionD: "Implementation of pipelining",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question: "What is the primary function of a computer?",
+        optionA: "Accept data, process it, and produce an output",
+        optionB: "Perform manual tasks efficiently",
+        optionC: "Generate mechanical energy",
+        optionD: "Conduct scientific experiments",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What technology were the first integrated circuits (ICs) based on?",
+        optionA: "Large-scale integration (LSI)",
+        optionB: "Medium-scale integration (MSI)",
+        optionC: "Small-scale integration (SSI)",
+        optionD: "Very large scale integration (VLSI)",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What was the switching time of electronic switches in the second generation of computer systems?",
+        optionA: "Approximately 0",
+        optionB: "1 nanosecond",
+        optionC: "10 milliseconds",
+        optionD: "1 second",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "Which generation brought huge gains in computational power?",
+        optionA: "First generation",
+        optionB: "Second generation",
+        optionC: "Third generation",
+        optionD: "Fifth generation",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What was a key feature of the fifth generation of computer systems?",
+        optionA: "Use of magnetic memories",
+        optionB: "Introduction of time-sharing",
+        optionC: "Integration of hundreds of processors",
+        optionD: "Development of microprogramming",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What scale of integration allowed entire processors to fit onto a single chip?",
+        optionA: "Small scale integration (SSI)",
+        optionB: "Medium scale integration (MSI)",
+        optionC: "Large scale integration (LSI)",
+        optionD: "Very large scale integration (VLSI)",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What type of memories replaced core memories as the main memory in most systems?",
+        optionA: "Magnetic memories",
+        optionB: "Cache memories",
+        optionC: "Semiconductor memories",
+        optionD: "Virtual memories",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Who made the earliest attempt to build an electronic computer in 1937?",
+        optionA: "Alan Turing",
+        optionB: "J. V. Atanasoff",
+        optionC: "Clifford Berry",
+        optionD: "Thomas Edison",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What major benefit did electronic components have over mechanical switches?",
+        optionA: "Higher cost",
+        optionB: "Faster speed",
+        optionC: "Longer lifespan",
+        optionD: "Lower energy consumption",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Which type of computer is best suited for business applications like inventory control and payroll?",
+        optionA: "Analog computer",
+        optionB: "Hybrid computer",
+        optionC: "Digital computer",
+        optionD: "Mechanical computer",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What was the primary purpose of the machine built byAtanasoff and Clifford Berry in 1941?",
+        optionA: "Electronic calculator",
+        optionB: "Military communication",
+        optionC: "Weather forecasting",
+        optionD: "Solving equations",
+        answer: "optionD",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Who designed the Colossus, an early electronic machine for the British military in 1943?",
+        optionA: "J. V. Atanasoff",
+        optionB: "Clifford Berry",
+        optionC: "Alan Turing",
+        optionD: "Thomas Edison",
+        answer: "optionC",
+      },
     ],
   },
   {
     id: 7,
     faculty: "Science",
-    courseCode: "PHY101",
-    courseTitle: "Introduction to Physics",
+    courseCode: "CIT143",
+    courseTitle: "Introduction Data Organization and Management",
     creditUnit: 2,
     level: "100",
     semester: "1",
     questions: [
       {
         type: "MCQ",
-        question: "What is the capital of Nigeria?",
-        optionA: "Lagos",
-        optionB: "Abuja",
-        optionC: "Uyo",
-        optionD: "Enugu",
+        question:
+          "What is the key difference between information and knowledge as per the content?",
+        optionA: "Information is specific facts, knowledge is symbols",
+        optionB:
+          "Information is a pool of interconnected ideas, knowledge is specific facts",
+        optionC:
+          "Information is specific facts, knowledge is a pool of interconnected ideas",
+        optionD: "Information is symbols, knowledge is specific facts",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is the relationship between data and information as described in the content?",
+        optionA: "Data symbols convey information ideas",
+        optionB: "Data and information are unrelated concepts",
+        optionC: "Data is irrelevant for knowledge",
+        optionD: "Information is solely based on personal opinions",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Why are sources of data often considered sources of information according to the content?",
+        optionA: "Due to the close relationship between data and information",
+        optionB:
+          "To confuse people about the distinction between data and information",
+        optionC: "To limit access to valuable knowledge",
+        optionD: "To discourage the use of data in decision-making",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "How are sources of information sometimes regarded in relation to knowledge in the content?",
+        optionA: "As sources of knowledge",
+        optionB: "As sources of confusion",
+        optionC: "As sources of misinformation",
+        optionD: "As sources of entertainment",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is the distinction between data, information, and knowledge according to the content?",
+        optionA:
+          "Data are symbols, information is specific facts, and knowledge is a pool of interconnected ideas.",
+        optionB:
+          "Data are specific facts, information is symbols, and knowledge is a pool of interconnected ideas.",
+        optionC:
+          "Data are symbols, information is the idea implied by symbols, and knowledge is a pool of interconnected ideas.",
+        optionD:
+          "Data are specific facts, information is the idea implied by symbols, and knowledge is a pool of specific facts.",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Why is it important to understand the concepts of information and knowledge even in a course focused on data organization and management?",
+        optionA: "To confuse people with unnecessary information",
+        optionB: "To emphasize the interchangeable use of data and information",
+        optionC:
+          "To highlight the distinctions often overlooked between data, information, and knowledge",
+        optionD: "To simplify the understanding of data management",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What do people often mistakenly do when discussing information management?",
+        optionA: "Mention data management instead",
+        optionB: "Refer to knowledge management",
+        optionC: "Use data and information interchangeably",
+        optionD: "Focus solely on knowledge",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "According to the content, what is the relationship between information and knowledge?",
+        optionA: "Information is a subset of knowledge",
+        optionB: "Knowledge is a subset of information",
+        optionC: "Information and knowledge are synonymous",
+        optionD: "Information and knowledge are unrelated",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is the main aim of the course 'Data organization and management' as mentioned in the content?",
+        optionA:
+          "To confuse the distinction between data, information, and knowledge",
+        optionB:
+          "To improve knowledge of effective data creation and management principles",
+        optionC: "To solely focus on information management",
+        optionD: "To discuss the visibility of data in various forms",
         answer: "optionB",
       },
       {
         type: "MCQ",
-        question: "What is the capital of Akwa Ibom?",
-        optionA: "Lagos",
-        optionB: "Abuja",
-        optionC: "Uyo",
-        optionD: "Itu",
-        answer: "optionC",
-      },
-      {
-        type: "FBQ",
-        question: "What is the capital of Cross River?",
-        answer1: "Calabar",
-        answer2: "Cally",
+        question:
+          "How are data, information, and knowledge described in terms of visibility according to the content?",
+        optionA:
+          "Data are visible, information is implied, and knowledge is uncertain",
+        optionB:
+          "Data are uncertain, information is visible, and knowledge is implied",
+        optionC:
+          "Data are visible, information is uncertain, and knowledge is implied",
+        optionD:
+          "Data are implied, information is visible, and knowledge is uncertain",
+        answer: "optionA",
       },
       {
         type: "MCQ",
-        question: "What is the capital of Rivers?",
-        optionA: "Ibadan",
-        optionB: "Ikwere",
-        optionC: "Port Harcourt",
-        optionD: "Andoni",
+        question:
+          "What is the role of people's abilities in conveying and inferring information from data according to the content?",
+        optionA:
+          "Their abilities have no impact on conveying information with data",
+        optionB: "Their abilities solely depend on their knowledge",
+        optionC:
+          "Their abilities depend on their knowledge to convey and infer information from data",
+        optionD: "Their abilities depend on the visibility of data",
         answer: "optionC",
       },
       {
+        type: "MCQ",
+        question:
+          "How does the content suggest that knowledge can be enhanced?",
+        optionA: "By focusing on data management",
+        optionB:
+          "By understanding the interchangeability of data and information",
+        optionC: "By improving the flow of new ideas (information)",
+        optionD:
+          "By ignoring the distinctions between data, information, and knowledge",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question: "How are data sources defined in the content?",
+        optionA: "Mediums conveying data symbols",
+        optionB: "Physical locations storing knowledge",
+        optionC: "Abstract concepts unrelated to information",
+        optionD: "Sources of emotional support",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Why do people often mention knowledge management when discussing information management according to the content?",
+        optionA: "To confuse the concepts further",
+        optionB: "To emphasize the importance of knowledge over information",
+        optionC: "Due to the interchangeable use of information and knowledge",
+        optionD: "To simplify the discussion",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question: "What is data organization concerned with?",
+        optionA: "Selection of symbols",
+        optionB: "Data analysis",
+        optionC: "Machine learning",
+        optionD: "Data visualization",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "Why is data organization important?",
+        optionA: "To confuse users",
+        optionB: "To facilitate effective storage and interpretation of data",
+        optionC: "To slow down data transfer",
+        optionD: "To complicate data computation",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "Which of the following is NOT a type of symbol used in data organization?",
+        optionA: "Words",
+        optionB: "Numbers",
+        optionC: "Colors",
+        optionD: "Images",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In data organization, what does the selection of words, numbers, and symbols aim to create?",
+        optionA: "Data for expressing information",
+        optionB: "Data for hiding information",
+        optionC: "Data for encryption",
+        optionD: "Data for deletion",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "What does data organization focus on as a subject of study?",
+        optionA: "Application of inappropriate methods",
+        optionB: "Analysis of irrelevant data",
+        optionC: "Application of appropriate methods",
+        optionD: "Analysis of random symbols",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "How should menu items, icons, and words be displayed in the windows of a computer screen according to data organization principles?",
+        optionA: "Randomly",
+        optionB: "In an organized manner",
+        optionC: "Upside down",
+        optionD: "Invisible",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is one example of data organization mentioned in the content?",
+        optionA: "Arranging news items in a newspaper edition",
+        optionB: "Creating chaos in data storage",
+        optionC: "Mixing up symbols in data transfer",
+        optionD: "Hiding data from users",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is the purpose of arranging statistical data into informative tables?",
+        optionA: "To confuse readers",
+        optionB: "To make data interpretation easier",
+        optionC: "To hide data patterns",
+        optionD: "To slow down data processing",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "How should data on the books held by a library be written as per data organization principles?",
+        optionA: "In a way that confuses users",
+        optionB: "As catalogue entries for effective user access",
+        optionC: "In invisible ink",
+        optionD: "In a foreign language",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is the focus of data organization in relation to survey questionnaires or application forms?",
+        optionA: "Random arrangement of questions",
+        optionB: "Efficient arrangement of questions",
+        optionC: "Hiding questions from respondents",
+        optionD: "Adding irrelevant questions",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question: "How does the content differentiate data from precepts?",
+        optionA: "Data are synonymous with precepts",
+        optionB: "Data are symbols, while precepts are facts",
+        optionC: "Data are unrecorded symbols",
+        optionD: "Data are not used to convey information",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In the context of data, what does the content suggest about the role of words compared to numbers and statistics?",
+        optionA: "Words can also be considered as data and convey information",
+        optionB:
+          "Words are less effective than numbers in conveying information",
+        optionC: "Words are irrelevant in the realm of data analysis",
+        optionD: "Words are only used for literary purposes",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "How does the content challenge the traditional view of data being solely numerical or statistical?",
+        optionA: "By highlighting that words can also serve as data",
+        optionB: "By emphasizing the importance of historical data",
+        optionC:
+          "By suggesting data is only derived from scientific experiments",
+        optionD:
+          "By stating that data is limited to specific units of measurement",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is one key message conveyed by the content regarding the generation of data?",
+        optionA: "Data is actively generated through scientific activities",
+        optionB: "Data is passively collected without human intervention",
+        optionC: "Data is randomly acquired without purpose",
+        optionD: "Data is exclusively obtained from historical sources",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "How does the content suggest expanding the understanding of data beyond traditional definitions?",
+        optionA: "By considering words as data in addition to numbers",
+        optionB: "By excluding numbers from the concept of data",
+        optionC: "By focusing solely on statistical data",
+        optionD: "By limiting data to experimental results",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "According to the content, what can be used as symbols to convey ideas or information besides numbers and statistics?",
+        optionA: "Words",
+        optionB: "Emojis",
+        optionC: "Musical notes",
+        optionD: "Hieroglyphics",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What concept does the content emphasize by stating that words can be used in place of numbers or statistics?",
+        optionA: "The versatility of language in conveying information",
+        optionB: "The limitations of numerical data",
+        optionC: "The insignificance of words in data analysis",
+        optionD: "The redundancy of using words in data representation",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "How does the content suggest redefining the notion of data for the course's purposes?",
+        optionA: "By broadening the understanding of what constitutes data",
+        optionB: "By narrowing down data to numerical values only",
+        optionC: "By excluding words from the definition of data",
+        optionD: "By focusing on data obtained from historical records",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What does the content imply about the relationship between words and data?",
+        optionA: "Words can function as data by conveying information",
+        optionB: "Words are irrelevant in the context of data analysis",
+        optionC: "Words are superior to numerical data",
+        optionD: "Words cannot be used to represent data",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In the context of the content, how does the definition of data extend beyond numbers and statistics?",
+        optionA: "By encompassing words as symbols for conveying information",
+        optionB: "By excluding words from the concept of data",
+        optionC: "By focusing solely on numerical data",
+        optionD: "By limiting data to experimental results",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "According to the content, what be used to convey information in a way to numbers and words?",
+        optionA: "Symbols",
+        optionB: "Pictures and images",
+        optionC: "Precepts",
+        optionD: "Facts",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is an important characteristic of data mentioned in the content?",
+        optionA: "They are always verbal",
+        optionB: "They are symbols from a language or culture",
+        optionC: "They are unverifiable over time",
+        optionD: "They are subjective",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question:
+          "According to the content, what is the definition of data provided by the 988 Webster's Encyclopedic Unabridged Dictionary of the English Dictionary?",
+        optionA:
+          "Facts and information derived from scientific experiments or calculations",
+        optionB: "Numbers and statistics obtained from historical records",
+        optionC: "Symbols used to represent ideas or information",
+        optionD: "Information that falls from the sky like manna",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "According to the content, what do some people mistakenly believe data is synonymous with?",
+        optionA: "Symbols",
+        optionB: "Information",
+        optionC: "Facts",
+        optionD: "News",
+        answer: "optionB",
+      },
+      {
+        type: "MCQ",
+        question: "How does the content define information?",
+        optionA: "Knowledge communicated through symbols",
+        optionB: "Something that changes beliefs",
+        optionC: "Data that are verifiable over time",
+        optionD: "Knowledge gained through communication or research",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "In the context of the content, what is information considered a synonym for?",
+        optionA: "Data",
+        optionB: "Fact",
+        optionC: "News",
+        optionD: "Uncertainty",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is information presumed to be when a scientist reports a new discovery in a scientific journal?",
+        optionA: "Transferred",
+        optionB: "Verifiable",
+        optionC: "Communicated",
+        optionD: "Subjective",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "When does information transfer occur according to the content?",
+        optionA: "When someone writes 'I am happy'",
+        optionB: "When a newscaster reads the news",
+        optionC: "When a lecturer passes knowledge to a student",
+        optionD: "When uncertainty is resolved",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is presumed to happen when a lecturer imparts knowledge to a student according to the content?",
+        optionA: "Information is communicated",
+        optionB: "Information is erased",
+        optionC: "Information is subjective",
+        optionD: "Information is unverifiable",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What concept has been mentioned multiple times in the content without a formal definition?",
+        optionA: "Symbols",
+        optionB: "Data",
+        optionC: "Knowledge",
+        optionD: "Facts",
+        answer: "optionC",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is one of the definitions of knowledge provided in the content?",
+        optionA: "Acquaintance with facts and principles",
+        optionB: "Understanding of emotions and feelings",
+        optionC: "Expertise in physical activities",
+        optionD: "Mastery of a foreign language",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question: "How is knowledge described in the content?",
+        optionA: "As facts, truths, and ideas forming a coherent whole",
+        optionB: "As random pieces of information",
+        optionC: "As irrelevant to interpreting the world",
+        optionD: "As solely gained through formal education",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "According to the content, how does a person's overall knowledge affect their perception?",
+        optionA: "Influences how they perceive the world",
+        optionB: "Has no impact on their perception",
+        optionC: "Causes confusion in their understanding",
+        optionD: "Leads to ignorance about the world",
+        answer: "optionA",
+      },
+      {
+        type: "MCQ",
+        question:
+          "What is emphasized as a way knowledge is built up over time in the content?",
+        optionA: "Observation, experience, and reports of new facts",
+        optionB: "Guesswork and assumptions",
+        optionC: "Ignoring new information",
+        optionD: "Avoiding interaction with others",
+        answer: "optionA",
+      },
+
+      {
         type: "FBQ",
-        question: "What is the headquaters of Uruan?",
-        answer1: "Idu",
-        answer2: "idu uruan",
+        question:
+          "The concept of that data being related in many different ways at the same time is an underlying principle of a data model called ______________",
+        answer1: "Hierarchical",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Database, tables, forms, queries report etc. are collectively referred to as ___________ object",
+        answer1: "Database",
+      },
+      {
+        type: "FBQ",
+        question: "The binary number for 8 is ____________",
+        answer1: 1000,
+      },
+      {
+        type: "FBQ",
+        question:
+          "The search ______________ is used to describe the data pertaining to the information one is looking for in a data store.",
+        answer1: "Term",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The binary system is important in computing because computers are designed to process, store and transmit data in the form of ______________ numbers and signals",
+        answer1: "binary",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Computers are designed to accept different combinations of alphabetical, numeric and other characters as ______________ and produce same characters as output.",
+        answer1: "Input",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Computers make use of a combination of two types of digits 0 and ______________",
+        answer1: 1,
+      },
+      {
+        type: "FBQ",
+        question:
+          "The most common input device for entering alphabetical, numerical and special characters is the ______________",
+        answer1: "Keyboard",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of investigating and identifying important attributes of a particular data set is called data ________________",
+        answer1: "Analysis",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of planning or designing an information system is often referred to as systems _______________ life cycle",
+        answer1: "Development",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of reducing voluminous data into less voluminous data is called _____________ summarisation",
+        answer1: "Data",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A comprehensive list of the data in the records of one or more data tables in a database is referred to as _________________",
+        answer1: "Report",
+      },
+      {
+        type: "FBQ",
+        question: "Numeric ______________ comprise mostly of Decimals",
+        answer1: "Data",
+      },
+      {
+        type: "FBQ",
+        question: "A byte consists of how many bits?",
+        answer1: "eight",
+        answer2: 8,
+      },
+      {
+        type: "FBQ",
+        question: "Another name for a primary key is ___________ key",
+        answer1: "Golden",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Misuse is one of the ways in which a stored data can be ______________",
+        answer1: "Lost",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Data analysis is the process of investigating and identifying the ______________ or characteristics of a particular set of data.",
+        answer1: "attributes",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Information systems are best designed and developed through a Systematic ____________",
+        answer1: "Planning",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The ______________ is the most common input device, used for indicating and selecting options from menus displayed on a computer monitor.",
+        answer1: "Mouse",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Input devices perform the task of detecting ______________ produced by the action a computer operator, such as the press of a key on the keyboard,",
+        answer1: "signals",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Data and information retrieval enable information searchers to find, evaluate and use the data or ______________",
+        answer1: "information",
+      },
+      {
+        type: "FBQ",
+        question: "The binary number for 7 is ______________",
+        answer1: 111,
+      },
+      {
+        type: "FBQ",
+        question:
+          "Media ______________ is one of the ways in which a stored data can be lost",
+        answer1: "damage",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The scanner can be used to ______________ pictures into the computer system",
+        answer1: "Input",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Data planning and ______________ is interwoven with information management because of the very close relationship between data and information.",
+        answer1: "management",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A good graphic illustration of a network is a spider ______________",
+        answer1: "Web",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Generally, input and output devices are only able to recognise two types of symbols, either low or ______________ voltage pulses or nothing else.",
+        answer1: "High",
+      },
+      {
+        type: "FBQ",
+        question:
+          "______________ modelling refers to the process of arranging, grouping or linking groups of data for different purposes.",
+        answer1: "Data",
+      },
+      {
+        type: "FBQ",
+        question:
+          "______________ Data is data that someone had previously created, collected, stored or published.",
+        answer1: "Secondary",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Data may be either created, collected, acquired, or ______________",
+        answer1: "Captured",
+      },
+      {
+        type: "FBQ",
+        question: "The decimal system has ten symbols or ______________",
+        answer1: "Digits",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A policy is a set of statements that describe the circumstances, objectives and constraints to be followed by people in an organization or ______________ system",
+        answer1: "Information",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Typically, data planning and management is interwoven with information ______________",
+        answer1: "Management",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A datasheet view enables one to update data in a ______________",
+        answer1: "Table",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The _________ is a set of statements that describe the circumstances, objectives and constraints to be followed by people in an organization or information system.",
+        answer1: "Data policy",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The arrangement of chapters, sections and subsections in a textbook is an example of which of the following data models?",
+        answer1: "Hierarchical",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of making decisions about what data should be created and for what purpose is referred to as ______?",
+        answer1: "Data policy-making",
+      },
+      {
+        type: "FBQ",
+        question:
+          "______ is usually described in terms of variables such as accuracy, validity and adequacy.",
+        answer1: "Data quality",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of verifying and certifying that the data that has been created or collected from other sources meet minimum standards of consistency and accuracy is called __________",
+        answer1: "Data communication and transfer",
+      },
+      {
+        type: "FBQ",
+        question:
+          "__ is a pre-defined way of displaying some or all the records and fields in a data table",
+        answer1: "Query",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Which of the following refers to the process of decomposing data into separate data sets?",
+        answer1: "Data disaggregation",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of making decisions about what data should be created and for what purpose is referred to as which of the following?",
+        answer1: "Data policy-making",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Organizing data in books or computers is a sample activity in which of the following processes?",
+        answer1: "Data management",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Ascertaining users' information requirement is the first stage of the system development life cycle",
+        answer1: false,
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of providing special protection or secure long-term storage for extremely valuable data is called ____",
+        answer1: "Data communication and transfer",
+      },
+      {
+        type: "FBQ",
+        question:
+          'When someone is looking for the name of a particular person, "Madu Okey", in a telephone directory, which data retrieval type will be used?',
+        answer1: "Known-item",
+      },
+      {
+        type: "FBQ",
+        question:
+          "Which of the following is used to describe the information one is looking for in a data store?",
+        answer1: "Search term",
+      },
+      {
+        type: "FBQ",
+        question: "The following are features of a system except?",
+        answer1: "Analysis",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A medium that has been used to convey data symbols is called ___",
+        answer1: "Data source",
+      },
+      {
+        type: "FBQ",
+        question:
+          "___ defines a set of activities that begin at a specific date and end at another specific date in a software development lifecycle",
+        answer1: "Project",
+      },
+      {
+        type: "FBQ",
+        question:
+          "One of these is a type of information retrieval method from a data store?",
+        answer1: "Data management",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of making decisions about what data should be created and for what purpose is referred to as which of the following?",
+        answer1: "Data policy-making",
+      },
+      {
+        type: "FBQ",
+        question:
+          "One of these is a disadvantage of manual methods in data analysis.",
+        answer1: "Error-prone",
+      },
+      {
+        type: "FBQ",
+        question:
+          "A set of statements that describe the circumstances, objectives and constraints to be followed by people in an organization concerning a particular activity or issue is called __",
+        answer1: "Policy",
+      },
+      {
+        type: "FBQ",
+        question:
+          "The effectiveness of data organization and storage can’t be assessed in terms of volume of data processed?",
+        answer1: true,
+      },
+      {
+        type: "FBQ",
+        question:
+          "The process of making decisions about what data should be created and for what purpose is referred to as which of the following?",
+        answer1: "Data policy-making",
+      },
+      {
+        type: "FBQ",
+        question:
+          "______ is an example of a hazard that can affect paper media?",
+        answer1: "Rodents",
+      },
+      {
+        type: "FBQ",
+        question: "The equivalent of 64 in binary number is __",
+        answer1: 1100011,
+      },
+      {
+        type: "FBQ",
+        question:
+          "The binary number system uses only two symbols – 0 and 1 – in different combinations and sequences to represent _______",
+        answer1: "Relationship",
       },
     ],
   },
